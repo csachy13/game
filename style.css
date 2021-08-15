@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap');
+.flex {
+    display: flex;
+}
+.clik {
+    width: 95vw;
+    height: 30vw;
+    font-size: 10vw;
+    text-align: center;
+}
+body, button, input{
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: beige;
+}
+body {
+    background-color: rgb(32, 32, 32);
+}
+button {
+    background-color: black;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    margin: 1vw;
+}
+.center {
+    text-align: center;
+}
+.meen {
+    width: 95vw;
+    height: 10vh;
+}

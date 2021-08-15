@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>AndewPort</title>
+        <script src="lib/jquery.min.js"></script>
+        <link type='text/css' href='style.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class='container'>
+            <h1>Uhh cliker gamee (The bset wejkb desjign evvvr!!!K!!!!!!!!!!!!!!!!!!!!!!!!!)</h1>
+            <hr/>
+            <article>
+                <p>Diss is a very simp le clic er game. it con tains all most four tea lines off code (it is third tea nine lines off codee rash speck toff lee. ) <br> Any waist, here is et!</p>
+            </article>
+            <div class='pe'>
+                <button id='button1' class='clik'>1</button>
+                <div class='shop'>
+                    <h1>Shop</h1>
+                    <button id='add1cpc'>cpc++ ($100)</button>
+                    <button id='add2cpc'>cpc++10 ($900)</button>
+                    <button id='add3cpc'>cpc++100 ($8000)</button>
+                    <br>
+                    <button id='add1cps'>cps++ ($150)</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <script>
+            var per = 1;
+            var persec = 0;
+            var x = 1;
+        
+            $(() => {
+                setInterval(() => {
+                    $('#button1').html(x)
+                }, 0);
+                setInterval(() => {
+                        x += persec
+                }, 1000)
+                });
+                var button = '#button1'
+                $('#button1').click(() => {
+                    x += per;
+                })
+                $('#add1cpc').click(() => {
+                    var cost = 100;
+                    if (x > cost - 1) {
+                        x -= cost
+                        per++;
+                    }
+                })
+                $('#add2cpc').click(() => {
+                    var cost = 900;
+                    if (x > cost - 1) {
+                        x -= cost
+                        per += 10;
+                    }
+                })
+                $('#add3cpc').click(() => {
+                    var cost = 8000;
+                    if (x > cost - 1) {
+                        x -= cost
+                        per += 100;
+                    }
+                })
+                $('#add1cps').click(() => {
+                    var cost = 150;
+                    if (x > cost - 1) {
+                        x -= cost
+                        persec += 1;
+                    }
+                })
+            
+        </script>
+    </body>
+</html>
